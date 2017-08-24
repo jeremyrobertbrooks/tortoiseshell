@@ -77,3 +77,66 @@ a {
   }
 
 /**services**/
+#servicesBox {
+  width: 27rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem auto;
+}
+
+.services {
+  width: 5rem;
+  height: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.portrait img {
+  max-width: 3.5rem;
+}
+
+.landscape img {
+  max-width: 5rem;
+}
+
+/**info**/
+#infoBox {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.info {
+  width: 35%;
+  max-width: 340px;
+  margin: 0 2.5%;
+}
+
+.info h3 {
+  width: 10rem;
+  background-color: cadetblue;
+  padding: 0.5rem 1.25rem;
+  margin-bottom: 1rem;
+}
+
+/**footer**/
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  width: 960px;
+  display: flex;
+  align-items: center;
+  background-color: azure;
+}
+
+footer img {
+  height: 1.5rem;
+  margin: 4rem 1rem 4rem 4rem;
+}
