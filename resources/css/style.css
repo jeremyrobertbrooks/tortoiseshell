@@ -1,19 +1,79 @@
-* {
-  font-family: Helvetica, Arial, sans-serif;
+/**general**/
+html {
+  font-size: 18px;
+  line-height: 1.4;
+  font-family: helvetica;
 }
-
 
 h1 {
-  color: SeaGreen;
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: bold;
 }
 
-
-p,
-li {
-  font-size: 18px;
+h2 {
+  color: white;
 }
 
+h3 {
+  font-weight: bold;
+  color: white;
+}
 
 a {
+  color: white;
   text-decoration: none;
 }
+
+/**headline**/
+#headline {
+  background-image: url(../glasses-bg.png);
+  background-size: cover;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+  /**header**/
+  header {
+    width: 960px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: cadetblue;
+    margin-top: 1rem;
+  }
+
+  #logo {
+    display: flex;
+    align-items: center;
+  }
+
+  #logo img {
+    height: 1.5rem;
+    margin: 0 1rem 0 2rem;
+  }
+
+  nav {
+    margin: 1rem 0;
+  }
+
+  nav a {
+    margin-right: 2rem;
+  }
+
+  /**motto**/
+  #mottoBox {
+    width: calc(960px + 2rem);
+    margin-top: 10rem;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  #motto {
+    background-color: white;
+    padding: 1.5rem 5rem;
+  }
+
+/**services**/
