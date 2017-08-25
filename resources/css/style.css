@@ -63,6 +63,14 @@ a {
     margin-right: 2rem;
   }
 
+  .phoneDisplayOn {
+    display: none;
+  }
+
+  .phoneDisplayOff {
+    display: inline;
+  }
+
   /**motto**/
   #mottoBox {
     width: calc(960px + 2rem);
@@ -139,4 +147,119 @@ footer {
 footer img {
   height: 1.5rem;
   margin: 4rem 1rem 4rem 4rem;
+}
+
+/**media queries and responsive design**/
+/**tablet size - 1024px**/
+@media only screen and (max-width: 1024px) {
+  /**headline**/
+  #headline {
+    height: 22rem;
+    background-size: cover;
+  }
+
+    /**header**/
+    header {
+      width: 100%;
+      margin-top: 0;
+    }
+
+    /**motto**/
+    #mottoBox {
+      width: 100%;
+      margin: 5rem 2rem 0 0;
+    }
+
+    #motto {
+      padding: 0.75rem 4rem;
+    }
+
+    h1 {
+      font-size: 1.33rem;
+    }
+}
+
+/**phone size - 650px**/
+@media only screen and (max-width: 650px) {
+  /**headline**/
+  #headline {
+    height: 17rem;
+    background-position: 20%;
+  }
+
+    /**header**/
+    header {
+      width: 100%;
+    }
+
+    .phoneDisplayOn {
+      display: block;
+    }
+
+    .phoneDisplayOff {
+      display: none;
+    }
+
+    /**motto**/
+    #mottoBox {
+      width: 100%;
+      justify-content: center;
+      margin: 9rem 0 0 0;
+    }
+
+    #motto {
+      width: 100%;
+      padding: 1rem 0;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 1rem;
+    }
+
+  /**services**/
+  #servicesBox {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services {
+    margin: 0.77rem 0;
+    justify-content: space-around;
+  }
+
+  p {
+    font-size: 0.77rem;
+  }
+
+  /**info**/
+  #infoBox {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info {
+    width: 100%;
+    max-width: none;
+    margin: 0 0 4rem 0;
+  }
+
+  .info h3 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .info p {
+    margin: 0 7px;
+  }
+
+  /**footer**/
+  footer {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .phoneDisplayOff {
+    /**change performed above**/
+  }
 }
